@@ -1,10 +1,12 @@
 {
-  "name": "database",
+  "name": "noEnv-database",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prisma:migrate:dev": "pnpm prisma migrate dev"
+    "prisma:migrate:dev": "pnpm prisma migrate dev",
+    "prisma:generate": "pnpm prisma generate",
+    "postinstall": "pnpm prisma:generate"
   },
   "keywords": [],
   "author": "",
